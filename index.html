@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="./images/logo.svg" alt="snap" class="logo">
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-dropdown="features">
+                Features
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrow-icon">
+              </a>
+              <div class="dropdown-menu" id="features-dropdown">
+                <a href="#" class="dropdown-item">
+                  <img src="./images/icon-todo.svg" alt="" class="dropdown-icon">
+                  Todo List
+                </a>
+                <a href="#" class="dropdown-item">
+                  <img src="./images/icon-calendar.svg" alt="" class="dropdown-icon">
+                  Calendar
+                </a>
+                <a href="#" class="dropdown-item">
+                  <img src="./images/icon-reminders.svg" alt="" class="dropdown-icon">
+                  Reminders
+                </a>
+                <a href="#" class="dropdown-item">
+                  <img src="./images/icon-planning.svg" alt="" class="dropdown-icon">
+                  Planning
+                </a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-dropdown="company">
+                Company
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrow-icon">
+              </a>
+              <div class="dropdown-menu" id="company-dropdown">
+                <a href="#" class="dropdown-item">History</a>
+                <a href="#" class="dropdown-item">Our Team</a>
+                <a href="#" class="dropdown-item">Blog</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Careers</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+          </ul>
+
+          <div class="nav-auth">
+            <a href="#" class="auth-link login">Login</a>
+            <a href="#" class="auth-link register">Register</a>
+          </div>
+        </div>
+
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <img src="./images/icon-menu.svg" alt="Menu" class="menu-icon">
+          <img src="./images/icon-close-menu.svg" alt="Close" class="close-icon">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Make remote work</h1>
+          <p class="hero-description">
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <a href="#" class="hero-cta">Learn more</a>
+
+          <div class="hero-clients">
+            <img src="./images/client-databiz.svg" alt="databiz" class="client-logo">
+            <img src="./images/client-audiophile.svg" alt="audiophile" class="client-logo">
+            <img src="./images/client-meet.svg" alt="meet" class="client-logo">
+            <img src="./images/client-maker.svg" alt="maker" class="client-logo">
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/image-hero-desktop.png">
+            <img src="./images/image-hero-mobile.png" alt="Remote work illustration" class="hero-img">
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ayokanmi Adejola</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

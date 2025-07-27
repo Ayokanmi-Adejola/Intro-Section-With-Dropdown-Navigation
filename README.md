@@ -170,6 +170,3 @@ intro-section-dropdown-navigation/
 - [Frontend Mentor](https://www.frontendmentor.io) for providing the design challenge
 - [Google Fonts](https://fonts.google.com) for the Epilogue font family
 - The web development community for inspiration and best practices
-
-
-# Intro-Section-With-Dropdown-Navigation
